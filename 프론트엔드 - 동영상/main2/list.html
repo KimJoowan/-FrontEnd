@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css2/list.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img  id="menuIcon" src="../img/메뉴.png">
+            <img src="../img/유유트 아이콘.png">
+            <form action="#" method="get">
+                <input type="text">
+                <input type="submit" value="검색">
+            </form>
+            <img src="../img/게정 원형 이미지.png">
+        </header>
+        <main>
+            <div id="menu" class="menu">
+                <a href="#"><img src="../img/homeButton.png"></a><br>
+                <a href="#"><img src="../img/myVideoButton.png"></a><br>
+                <a href="#"><img src="../img/uploadButton.png"></a><br>
+            </div>
+            <div class="content">
+                <div class="videoContainer">
+                    <img class="thumbnail" src="../img/hq720.webp" alt="메뉴 아이콘"></img>
+                    <div class="videoTilet">
+                        <a href="#">
+                            <p>일반인이 '재능충' 소리 듣는 법</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="videoContainer">
+                    <img class="thumbnail" src="../img/hq720.webp" alt="메뉴 아이콘"></img>
+                    <div class="videoTilet">
+                        <a href="#">
+                            <p>일반인이 '재능충' 소리 듣는 법</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="videoContainer">
+                    <img class="thumbnail" src="../img/hq720.webp" alt="메뉴 아이콘"></img>
+                    <div class="videoTilet">
+                        <a href="#">
+                            <p>일반인이 '재능충' 소리 듣는 법</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="videoContainer">
+                    <img class="thumbnail" src="../img/hq720.webp" alt="메뉴 아이콘"></img>
+                    <div class="videoTilet">
+                        <a href="#">
+                            <p>일반인이 '재능충' 소리 듣는 법</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="videoContainer">
+                    <img class="thumbnail" src="../img/hq720.webp" alt="메뉴 아이콘"></img>
+                    <div class="videoTilet">
+                        <a href="#">
+                            <p>일반인이 '재능충' 소리 듣는 법</p>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+<script>
+
+    const button = document.getElementById("menuIcon");
+    const menu = document.getElementById("menu");
+
+    let isVisible = true;
+
+    button.addEventListener('click', function() {
+        if(isVisible){
+            menu.style.display = "none";
+        }else{
+            menu.style.display = "flex";
+        }
+        isVisible = !isVisible;
+    })   
+
+
+
+
+
+</script>

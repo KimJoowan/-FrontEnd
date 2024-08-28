@@ -1,0 +1,105 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header_inner {
+    position: relative;
+    background-color: white;
+    display: flex;
+    padding: 20px 30px; /* 상단과 좌우에 여백 추가 */
+}
+
+.header_inner > img{
+    margin-left: 00px;
+    width: 50px;
+    height: 50px;
+}
+
+.header_inner h1 {
+    color: black;
+    text-align: left; /* 왼쪽 정렬 */
+    margin: 0; /* 불필요한 여백 제거 */
+}
+
+form {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+form input[type="text"] {
+    background-color: white;
+    border: 1px solid gray;
+    width: 500px;
+    height: 45px;
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+form input[type="submit"] {
+    border: 1px solid gray;
+    background-color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.video img {
+    width: 300px; /* 고정된 가로 크기 */
+    height: 200px; /* 고정된 세로 크기 */
+    border-radius: 20px;
+}
+
+.video p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer h1 {
+    color: black;
+}

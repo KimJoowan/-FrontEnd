@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box; /* Ensure all elements use border-box sizing */
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+}
+
+header form {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+header form input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    height: 36px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px;
+    box-sizing: border-box; 
+}
+
+header form input[type="submit"] {
+    padding: 8px 15px;
+    height: 36px; 
+    background-color: #ccc;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+
+main {
+    display: flex;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.menu {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu a {
+    margin: 10px 0;
+}
+
+.menu img {
+    margin: 0 15px;
+    width: 30px; /* Adjust size as needed */
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 3 columns, each taking equal space */
+    gap: 10px; /* Space between video containers */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.videoContainer  {
+    padding: 20px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.thumbnail {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.videoContainer > .videoTilet{
+    padding:10px 0px;
+}
+
+.videoTilet > a{
+    text-decoration-line: none;
+}
+
+.videoTilet > a > p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Optional: Handle overflow if needed */
+.wrap {
+    overflow: hidden; /* Hide any overflow content */
+}
+
